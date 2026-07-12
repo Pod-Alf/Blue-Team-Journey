@@ -78,3 +78,13 @@ So the following diagram appeared:
 Again, in prevision of possible leaks of testing malware, all virtual machines are designated with an
 Internal Network networking configuration as to keep any risk far from the internet and/or the domestic devices
 in my network.
+
+## Lab Status
+
+This is the status of the lab at the most updated current status.
+
+- Rocky Linux machine - Victim Linux - IP: 172.16.0.2/28 - Operational
+- Kali Linux machine - Attacker Linux - IP 172.16.0.14/28 - Operational
+- Connection verified through bidirectional ping. No package lost and response in less than 2.00 ms.
+
+![Network verification through bidirectional ping](Screenshots/Bidirectional Pings.png)
