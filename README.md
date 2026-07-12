@@ -14,20 +14,22 @@ the curiosity on what happened to a system after an attack has happened.
 ## What can you find?
 
 On this project you'll find.
-1- The start of my journey (Configuration, tools used, versions, packages, first conclussions)
-2- The different versions and proceedings which I've done to continue developing skills fit for SOC and DFIR.
-3- Reports about the attacks received on the systems of my project and the findings of such.
-4- Further development on said skills and project to new tools.
+
+- 1- The start of my journey (Configuration, tools used, versions, packages, first conclussions)
+- 2- The different versions and proceedings which I've done to continue developing skills fit for SOC and DFIR.
+- 3- Reports about the attacks received on the systems of my project and the findings of such.
+- 4- Further development on said skills and project to new tools.
 
 ## Stack until now
 
 About my job experience or on hand experience I've worked with at the moments are:
--AD
--Windows Server
--Linux Rhel
--M365
--ServiceNow
--Monitoring with Grafana
--SCCM and Intune for device management.
+
+- AD
+- Windows Server
+- Linux Rhel
+- M365
+- ServiceNow
+- Monitoring with Grafana
+- SCCM and Intune for device management.
 
 
