@@ -87,4 +87,4 @@ This is the status of the lab at the most updated current status.
 - Kali Linux machine - Attacker Linux - IP 172.16.0.14/28 - Operational
 - Connection verified through bidirectional ping. No package lost and response in less than 2.00 ms.
 
-![Network verification through bidirectional ping](Screenshots/Bidirectional Pings.png)
+![Network verification through bidirectional ping](Screenshots/Bidirectional_Pings.png)
