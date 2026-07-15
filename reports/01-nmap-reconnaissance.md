@@ -53,7 +53,59 @@ one that is not the default port or even closing the service if it's not a neede
 
 ## Screenshots.
 
-- July 14th report
+- July 14th 2026 report
 
 ![Nmap July 14th](../Screenshots/July_14th.png)
 
+## SSH Access - Exploitation
+
+This was perform as an exploit of SSH connection. This section will explain how it happened step by step
+and how it was possible and the impact on a real environment.
+
+- Used command to connect  was 'ssh a@172.16.0.2'
+
+- Once the command was used the system asked for confirmation, since it was a first time connection. Once
+confirmed because we said yes, it asked for the password directly, since we used the username already: 'a'
+Once it confirmed the veracity of user and password, it allowed us to connect to the user, that we
+checked: First if I really was the user I asked on SSH, second, which localhost I'm right now.
+Third I asked the system using sudo, which user I was. This means that I was in user a, but that user was in
+sudoers, which meant the attacker had access to root privileges through the system.
+
+- This was possible because of 3 known vulnerabilities: Fully open tcp port (it had the full default config,
+which meant no filters from hosts, no whitelist regarding IPs and connection entered through default port
+which made the access easier for the attacker. Combined with an easy user and password (user a, password a)
+meant a high risk vulnerability regarding an easy username and weak password that could be easily found or
+even brute forced.
+
+- The impact this kind of exploits could have in a real environment not only meant the attacker would have
+full and total access to the machine and the info stored inside, it would also mean the user could, without
+any form of prevention, install malware(keyloggers, worms, trojans), open other ports,
+steal info or even outright turning off the server and cause a total outtake on productions services which
+would cause the lose of credibility of a company but also face actions from the market or even the lose of
+trust from clients. Another kind of malware the attacker could do is actually encrypting the info and
+demand the payment of a ransom to de-enscript the info or drives (ransomware attack).
+
+- Screenshots July 16th 2026
+
+![Exploit July 16th](../Screenshots/SSH_Exploit.png)
+
+## Remediation
+
+To perform the necessary steps into remediating this vulnerability the first step would be to include a
+solid policy about usernames and passwords, changing them to something more complex (Even 'admin.prod' would
+be better than 'a')
+
+Second step into remediation would be to perform a rotation of password periodically or inmediately after
+suspected compromise. Also have the password stored in a safe password vault accessible only to a handful
+of users. The password has to include: At least one upper case, at least one lower case, at least one
+number, at least one special key and have a minimal length of 15 to make it harder to auto generate the 
+password or even brute force it.
+
+Third step would be to change SSH configuration (Change the default port to another, and make sure it doesn't
+accept every connection)
+
+Fourth step would be implementing a firewall to whitelist the ips that can connect to the production server
+and refuse the connection from devices out of that same whitelist.
+
+Last but not least, to be always up to date with the CVE reports regarding SSH exploits and performing
+regular updates of the services that can be used to exploit the connection or access.
