@@ -81,5 +81,5 @@ the sysadmin to schedule the update and restart of the affected servers.
 
 ## Screenshots
 
-![Wazuh Dashboard](../Screenshots/Wazuh_Agent_Summary.png)
+![Wazuh Dashboard](../Screenshots/Wazuh_agent_Summary.png)
 ![Vulnerabilities](../Screenshots/Vulnerability_Report_Rocky_Linux10.png)
