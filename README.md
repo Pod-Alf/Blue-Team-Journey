@@ -20,6 +20,16 @@ On this project you'll find.
 - 3- Reports about the attacks received on the systems of my project and the findings of such.
 - 4- Further development on said skills and project to new tools.
 
+And now for the little index
+
+- [Design Decisions](./00-design-decisions.md)
+
+- [Report regarding nmap](./reports/01-nmap-reconnaissance.md)
+
+- [Report for the installation of Wazuh SIEM tool](./reports/02-wazuh-setup.md)
+
+- [Report about SSH bruteforce detection and custome rules on Wazuh](./reports/03-ssh-bruteforce-detection.md)
+
 ## Stack until now
 
 About my job experience or on hand experience I've worked with at the moments are:
