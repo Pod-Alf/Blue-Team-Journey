@@ -43,3 +43,10 @@ About my job experience or on hand experience I've worked with at the moments ar
 - SCCM and Intune for device management.
 
 
+## Contact Info
+
+- [Linkedin](https://www.linkedin.com/in/alfonso-podadera-lopez-0b41ab177)
+
+- <a href="mailto:alfonsopodadera@gmail.com">Contact Mail</a>
+
+🟢 Active project — updated regularly
