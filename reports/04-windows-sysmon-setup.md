@@ -87,10 +87,13 @@ And this is also a good way for them to blend in, so the earlier it's discovered
 ## Screenshots
 
 Agent Summary
+
 ![Agent_summary](../Screenshots/agent_summary.png)
 
 Sysmon Events
+
 ![sysmon_events](../Screenshots/sysmon_alerts.png)
 
 Sysmon Event Details
+
 ![alert_details_win](../Screenshots/alert_details_win.png)
