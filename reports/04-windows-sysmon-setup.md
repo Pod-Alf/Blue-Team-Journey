@@ -1,6 +1,6 @@
 # Windows Endpoint Setup - Sysmon and Wazuh
 
-Document to report the installation and configuration of sysmon and finally the inclusion of a windows enpoint machine to the homelab.
+Document to report the installation and configuration of sysmon and finally the inclusion of a windows endpoint machine to the homelab.
 
 ## Date
 Aug 5 2026 13:46

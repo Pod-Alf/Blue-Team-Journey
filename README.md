@@ -30,6 +30,7 @@ And now for the little index
 
 - [Report about SSH bruteforce detection and custome rules on Wazuh](./reports/03-ssh-bruteforce-detection.md)
 
+- [Report on Agent on Windows Endpoint with sysmon + MITTRE ATT&CK Account Discovery](./reports/04-windows-sysmon-setup.md)
 ## Stack until now
 
 About my job experience or on hand experience I've worked with at the moments are:
