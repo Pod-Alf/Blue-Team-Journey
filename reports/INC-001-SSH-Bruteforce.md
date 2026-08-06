@@ -38,7 +38,7 @@ consequences.
 | Aug 3rd 10:12:47 | Bruteforce attack identified by SIEM | |
 | Aug 3rd 10:13 | Analyst raises and escalates incident | |
 | Aug 3rd 10:15 | Analyst tries to contain further connection from Attacker IP | |
-| Aug 4th (post-incident discovery | Port scan activity identified on victim prior to bruteforce attack | Issue discovered during INC-001 investigation. Failed to detect it in real time due to lack of SIEM monitorization. |
+| Aug 4th (post-incident discovery) | Port scan activity identified on victim prior to bruteforce attack | Issue discovered during INC-001 investigation. Failed to detect it in real time due to lack of SIEM monitorization. |
 
 ## Technical Analysis
 
