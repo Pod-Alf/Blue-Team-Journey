@@ -38,6 +38,7 @@ consequences.
 | Aug 3rd 10:12:47 | Bruteforce attack identified by SIEM | |
 | Aug 3rd 10:13 | Analyst raises and escalates incident | |
 | Aug 3rd 10:15 | Analyst tries to contain further connection from Attacker IP | |
+| Aug 4th (post-incident discovery | Port scan activity identified on victim prior to bruteforce attack | Issue discovered during INC-001 investigation. Failed to detect it in real time due to lack of SIEM monitorization. |
 
 ## Technical Analysis
 
@@ -86,6 +87,10 @@ Wazuh rules triggered:
 | Protocol Used | SSH | |
 | Compromised user | a | |
 | Wazuh rule triggered | 5712 | Created custom rule 100002 in consequence to verify this attack easier |
+
+### Lesson Learned
+
+The installation of SIEM is almost as important as the network itself and has to be prepared prior to get a server working so everything can be checked and monitorized.
 
 ## Impact and Response
 
