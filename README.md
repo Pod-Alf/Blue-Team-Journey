@@ -45,6 +45,11 @@ About my job experience or on hand experience I've worked with at the moments ar
 - Monitoring with Grafana
 - SCCM and Intune for device management.
 
+## Certifications
+
+| Certificate | Issuer | Date |
+| --- | --- | --- |
+| [Certified Cybersecurity Foundations (CORE)](https://hackviser.com/verify?id=HV-CORE-KNTWRQ8J) | Hackviser | August 2026 | 
 
 ## Contact Info
 
