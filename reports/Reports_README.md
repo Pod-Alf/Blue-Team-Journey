@@ -10,3 +10,4 @@ Section where the different reports are shown and a summary of what each report 
 | [03-ssh-bruteforce-detection](./03-ssh-bruteforce-detection.md) | SSH bruteforce simulation and custom alert rule creation and test |
 | [INC-001-SSH-Bruteforce report](./INC-001-SSH-Bruteforce.md) | Proffessional report from a SOC analyst perspective |
 | [04-windows-sysmon-setup](./04-windows-sysmon-setup.md) | Sysmon configuration in windows + MITTRE ATT&CK reference on procedure |
+| [INC-002-QakBot](./INC-002-QakBot-SOCSimulator.md) | Proffessional report from SOC analyst perspective |
