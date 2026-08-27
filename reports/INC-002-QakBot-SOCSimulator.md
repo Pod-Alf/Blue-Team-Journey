@@ -91,7 +91,7 @@ cmd.exe, PID: 5984, cmd.exe /c E:\qbot.cmd
 | | Encrypted Channel | T1573 |
 | | Asymmetric Cryptography | T1573.002 |
 | Exfiltration | | TA0010 |
-| | Exciltration over C2 Channel | T1041 |
+| | Exfiltration over C2 Channel | T1041 |
 
 ### Indicators of Compromise (IOCs)
 
@@ -106,7 +106,7 @@ cmd.exe, PID: 5984, cmd.exe /c E:\qbot.cmd
 
 ### Lesson Learned
 
-Think twice before opening a file sent by external sender. Even if it's an invoice you're waiting for it to arrive.
+SOC team should have detected the Regsvr32.exe and raise an alarm before the connection was established so the user's laptop could have been isolated and no info were taken
 
 ## Impact and Response
 
@@ -120,4 +120,4 @@ After thorough investigation we proceed to escalate this incident for further in
 
 ### Recommendations
 
-Isolate endpoint, re-imagine laptop, block any execution of /c on CMD or /s on regsvr32.exe, enroll user in phishing prevention courses, block attacker known IPs.
+Isolate endpoint, re-image laptop, block any execution of /c on CMD or /s on regsvr32.exe, enroll user in phishing prevention courses, block attacker known IPs.
