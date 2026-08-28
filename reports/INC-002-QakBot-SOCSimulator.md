@@ -7,7 +7,7 @@
 | Incident ID | INC-002 |
 | Date Detected | August 27th 2026 |
 | Time Detected | 11:30 AM |
-| Severity | High |
+| Severity | Critical |
 | Status | Escalated |
 | Analyst | Alfonso Podadera |
 | Affected System | HALDREN\dorian.haskell |
@@ -22,6 +22,7 @@ Once this was executed the bot executed regsvr32.exe in silent (/s) to change an
 Now with the bot all setup it constantly began to emit a C2 beacon signal to the list it had until it received a response.
 Later during the day a connection was stablished to download info.
 Requires escalation to further investigation.
+Incident active for 4 months, escalated from High to Critical Status.
 
 ## Timeline of Events
 
@@ -37,6 +38,7 @@ Requires escalation to further investigation.
 | April 23 2026 09:07 | regsvr32.exe tries to make outbound connection with embedded C2 list. Many refused |
 | April 23 2026 09:08 | C2 connection stablished successfully with IP 185.177.34.91 |
 | April 23 2026 11:48 | Attacker extracted (~2.86 MB) of data from host using encrypted C2 connection. Beacon kept working | Unknown data extracted |
+| August 27 2026 11:30 | Attack detected by analyst | Incident ocurred on April 23 2026; Identified on August 27. Increased severity from High to Critical |
 
 ## Technical Analysis
 
@@ -113,11 +115,12 @@ SOC team should have detected the Regsvr32.exe and raise an alarm before the con
 ### Potential Impact
 
 Loss of information, classified info, reputation loss for the company, system compromised, leak of information, lateral movement, privilege escalation, defense evasion and info extraction.
+Incident has been active for 4 months. Severity is critical.
 
 ### Actions taken
 
-After thorough investigation we proceed to escalate this incident for further investigation and actions.
+After thorough investigation we proceed to escalate this incident for further investigation and actions. 
 
 ### Recommendations
 
-Isolate endpoint, re-image laptop, block any execution of /c on CMD or /s on regsvr32.exe, enroll user in phishing prevention courses, block attacker known IPs.
+Isolate endpoint, re-image laptop, block any execution of /c on CMD or /s on regsvr32.exe, enroll user in phishing prevention courses, block attacker known IPs, enroll user in Anti-Phishing courses or Phishing awareness courses.
