@@ -9,7 +9,7 @@
 | Time of Incident | 09:20 AM |
 | Date Detected | Sept 2nd |
 | Time Detected | 09:35 AM |
-| Severity | High |
+| Severity | Critical |
 | Status | Escalated |
 | Analyst | Alfonso Podadera |
 | Affected User | laura.jimenez |
@@ -24,7 +24,7 @@ Once the document was open user accepted the use of macros. Those macros opened 
 The malicious file created a service on the systems to further the attack, tried to read the domain and local accounts to further the attack or escalate privileges and disabled Windows Spyware.
 Once this was done attacker encrypted the user files before login out to emite a C2 beacon signal.
 Requires escalation to further investigation.
-Incident High since it's somewhat contained and it has only affected one user from financial team.
+Incident Critical since ransomware was performed and we don't know tue extend of the complete attack (One laptop affected by tye moment)
 
 ## Timeline of Events
 
@@ -101,7 +101,6 @@ command: sc create WinSvc32 binpath= "C:\Windows\Temp\svchost32.exe" start= auto
 | | Assymetric Cryptography | T1573.002 |
 | | Application Layer Protocol | T1071 |
 | | Web Protocls | T1071.001 |
-| | Mail Protocols | T1071.003 |
 | | Proxy | T1090 |
 | | Multi-hop Proxy | T1090.003 |
 | Persistence | | TA0003 |
@@ -139,15 +138,45 @@ command: sc create WinSvc32 binpath= "C:\Windows\Temp\svchost32.exe" start= auto
 
 ### Lesson Learned
 
-SOC team could not be able to act faster (Issue ocurred in the span of 4 minutes), but should have detected this issue faster, isolated the file and got the laptop isolated before further actions.
-When a process has opened another one and it has not done so for 90 days (0 instances in 90 days) that should have raised our alarm and at least look further into it to prevent the action.
+- Lesson 1: Detected the child process too late.
+
+winword.exe generared a cmd.exe process.
+this has not happened a single time in > 90 days
+
+RCA: SIEM detected the event and classified it as LOW without active notification.
+
+Action: Create custom SIEM/XDR rule that escalates this event to CRITICAL and activares on-call whenever it happens.
+
+Scope of: SOC lead + Engineering detection team.
+
+- Lesson 2: Unblocked macros from external files.
+
+User was able to manually enable macros from a .docm attached to a received mail.
+
+RCA: Group policies are not blocking macros coming from external/unknown origin.
+
+Action: Deploy GPO to block macros from unsigned documents from unknown origin on all endpoints.
+
+Scope of: Sysadmin team.
+
+-Lesson 3: Containmemt time
+
+The attack contained 347 files in under 4 minutes before endpoint quarantine.
+
+RCA: There is no playbook for automatic quarantine when detecting a ransomware attack.
+
+Action: Configure automatic response in XDR to quarantine the endpoint once encrypting starts (>45 files/min)
+
+Scope: SOC L2 + XDR team
+
 
 ## Impact and Response
 
 ### Potential Impact
 
 Loss of information, classified info, system compromised, leak of information, lateral movement, privilege escalation, defense evasion and info encryption, also possible issues if there are no backups of encrypted files in case they're needed for financial audits.
-Incident resulted in ransomware attack, severity high, only one user and system affected and is somewhat contained, 
+Incident resulted in ransomware attack, severity high, only one user and system affected and is somewhat contained.
+PR and legal team have to be made aware of issues because of possible legal actions or consequences of falling victim to this attack.
 
 ### Actions taken
 
@@ -159,3 +188,11 @@ After thorough investigation we proceed to escalate this incident for further in
 Isolate endpoint, re-image laptop, change SIEM Rules to show CRITICAL on the execution of a process when no execution was started after 90 days and another one starts suddenly, block macros
 from all files downloaded, block registry so it can't be changed from non-admin accounts, block encryption executions of powershell
 check for online backups of user's system to recover encrypted affected files.
+contact legal and PR ream ASAP
+
+
+## Pending Investigations
+
+| Evento | Detalle | Estado |
+|---|---|---|
+| Strange activity — javier.moreno | 3 failes tries ro log in WKST-ADMIN-002 (08:28:41) followed by account lockout (08:34:20), happening at the same time as the attack. Possible lateral movement or a mere coincident. | Pending — Requires further investigation by L2 |
