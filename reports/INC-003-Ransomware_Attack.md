@@ -22,9 +22,9 @@
 Attacker sent a mail using mail spoofing technique and phishing so the user (laura.jimenez) open a malicious word document directly from the received mail.
 Once the document was open user accepted the use of macros. Those macros opened shell windows to start executing the attack and downloaded and executed a malicious file.
 The malicious file created a service on the systems to further the attack, tried to read the domain and local accounts to further the attack or escalate privileges and disabled Windows Spyware.
-Once this was done attacker encrypted the user files before login out to emite a C2 beacon signal.
+Once this was done attacker encrypted the user files before log out to emit a C2 beacon signal.
 Requires escalation to further investigation.
-Incident Critical since ransomware was performed and we don't know tue extend of the complete attack (One laptop affected by tye moment)
+Incident Critical since ransomware was performed and we don't know the extend of the complete attack (One laptop affected by the moment)
 
 ## Timeline of Events
 
@@ -98,9 +98,9 @@ command: sc create WinSvc32 binpath= "C:\Windows\Temp\svchost32.exe" start= auto
 | Command And Control | | TA0011 |
 | | Ingress Tool Transfer | T1105 |
 | | Encrypted Channel | T1573 |
-| | Assymetric Cryptography | T1573.002 |
+| | Assymmetric Cryptography | T1573.002 |
 | | Application Layer Protocol | T1071 |
-| | Web Protocls | T1071.001 |
+| | Web Protocols | T1071.001 |
 | | Proxy | T1090 |
 | | Multi-hop Proxy | T1090.003 |
 | Persistence | | TA0003 |
@@ -159,7 +159,7 @@ Action: Deploy GPO to block macros from unsigned documents from unknown origin o
 
 Scope of: Sysadmin team.
 
--Lesson 3: Containmemt time
+-Lesson 3: Containment time
 
 The attack contained 347 files in under 4 minutes before endpoint quarantine.
 
@@ -195,4 +195,4 @@ contact legal and PR ream ASAP
 
 | Evento | Detalle | Estado |
 |---|---|---|
-| Strange activity — javier.moreno | 3 failes tries ro log in WKST-ADMIN-002 (08:28:41) followed by account lockout (08:34:20), happening at the same time as the attack. Possible lateral movement or a mere coincident. | Pending — Requires further investigation by L2 |
+| Strange activity — javier.moreno | 3 failed login attempts WKST-ADMIN-002 (08:28:41) followed by account lockout (08:34:20), happening at the same time as the attack. Possible lateral movement or a mere coincident. | Pending — Requires further investigation by L2 |
