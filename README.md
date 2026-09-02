@@ -35,6 +35,8 @@ And now for the little index
 - [Proffessional Report on Bruteforce example](./reports/INC-001-SSH-Bruteforce.md)
 
 - [Proffessional Report on QakBot and C2 beacon](./reports/INC-002-QakBot-SOCSimulator.md)
+
+- [Proffessional Report on Ransomware Attack](./reports/INC-003-Ransomware_Attack.md)
 ## Stack until now
 
 About my job experience or on hand experience I've worked with at the moments are:
