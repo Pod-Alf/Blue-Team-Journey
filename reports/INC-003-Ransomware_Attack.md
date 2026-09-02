@@ -195,4 +195,4 @@ contact legal and PR ream ASAP
 
 | Evento | Detalle | Estado |
 |---|---|---|
-| Strange activity — javier.moreno | 3 failed login attempts WKST-ADMIN-002 (08:28:41) followed by account lockout (08:34:20), happening at the same time as the attack. Possible lateral movement or a mere coincident. | Pending — Requires further investigation by L2 |
+| Strange activity — javier.moreno | 3 failed login attempts WKST-ADMIN-002 (08:28:41) followed by account lockout (08:34:20), happening at the same time as the attack. Possible lateral movement or a mere coincidence. | Pending — Requires further investigation by L2 |
