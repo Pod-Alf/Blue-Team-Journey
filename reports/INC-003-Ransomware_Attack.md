@@ -98,7 +98,7 @@ command: sc create WinSvc32 binpath= "C:\Windows\Temp\svchost32.exe" start= auto
 | Command And Control | | TA0011 |
 | | Ingress Tool Transfer | T1105 |
 | | Encrypted Channel | T1573 |
-| | Assymmetric Cryptography | T1573.002 |
+| | Asymmetric Cryptography | T1573.002 |
 | | Application Layer Protocol | T1071 |
 | | Web Protocols | T1071.001 |
 | | Proxy | T1090 |
@@ -188,7 +188,7 @@ After thorough investigation we proceed to escalate this incident for further in
 Isolate endpoint, re-image laptop, change SIEM Rules to show CRITICAL on the execution of a process when no execution was started after 90 days and another one starts suddenly, block macros
 from all files downloaded, block registry so it can't be changed from non-admin accounts, block encryption executions of powershell
 check for online backups of user's system to recover encrypted affected files.
-contact legal and PR ream ASAP
+contact legal and PR team ASAP
 
 
 ## Pending Investigations
