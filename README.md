@@ -1,4 +1,7 @@
 # Blue-Team-Journey
+[![GitHub last commit](https://img.shields.io/github/last-commit/Pod-Alf/Blue-Team-Journey)]()
+[![GitHub repo size](https://img.shields.io/github/repo-size/Pod-Alf/Blue-Team-Journey)]()
+
 Repository to document my Journey from Helpdesk support/system support to Blue Team technician/DFIR
 
 Hi, my name is **Alfonso**.
