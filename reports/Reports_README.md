@@ -8,10 +8,10 @@ Documentation of security labs and incident analysis throughout my Blue Team lea
 
 | # | Lab Report | What's Inside | Tools |
 |:-:|------------|---------------|-------|
-| **01** | **[Network Reconnaissance](./01-nmap-reconnaissance.md)** | Port scanning and service enumeration from attacker's perspective on Rocky Linux victim server | `nmap` |
-| **02** | **[Wazuh SIEM Setup](./02-wazuh-setup.md)** | Complete Wazuh SIEM installation, configuration, and vulnerability assessment | `Wazuh` `OpenVAS` |
-| **03** | **[SSH Bruteforce Detection](./03-ssh-bruteforce-detection.md)** | Simulated SSH brute force attack with custom Wazuh detection rule creation | `Wazuh` `Hydra` |
-| **04** | **[Windows Sysmon Setup](./04-windows-sysmon-setup.md)** | Sysmon deployment and configuration with MITRE ATT&CK Account Discovery detection | `Sysmon` `Windows Event Logs` |
+| **01** | **[Network Reconnaissance](./01-nmap-reconnaissance.md)** | Port scanning and service enumeration from attacker's perspective on Rocky Linux victim server | `nmap` `ssh` |
+| **02** | **[Wazuh SIEM Setup](./02-wazuh-setup.md)** | Complete Wazuh SIEM installation, configuration, and vulnerability assessment | `Wazuh 4.14` `Ubuntu 24 LTS` `VirtualBox` |
+| **03** | [SSH Bruteforce Detection](./03-ssh-bruteforce-detection.md) | SSH brute force simulation and custom Wazuh detection rule (ID: 100002) | `Kali Linux` `Wazuh` `Custom XML Rules` |
+| **04** | **[Windows Sysmon Setup](./04-windows-sysmon-setup.md)** | Sysmon deployment and configuration with Wazuh integration + MITRE ATT&CK T1087 analysis | `Sysmon` `SwiftOnSecurity Config` `Wazuh Agent` `PowerShell` |
 
 ---
 
@@ -29,20 +29,21 @@ SOC-style incident analysis with complete forensic timelines, IOCs, and MITRE AT
 
 ## 📋 What Each Type Contains
 
-**Technical Labs:**
-- Objective and methodology
-- Tool configuration and commands
-- Execution steps with screenshots
-- Results analysis
-- Key takeaways
+### Technical Labs Include:
+- Objective and scope
+- Tools and configurations used
+- Step-by-step procedures
+- Results and observations
+- Lessons learned
 
-**Incident Reports:**
-- Executive summary
-- Complete timeline (timestamps + PIDs)
-- MITRE ATT&CK tactics/techniques
-- Full IOC list (IPs, hashes, file paths)
-- Root cause analysis
-- Remediation recommendations
+### Incident Reports Include:
+- **Incident Summary** — Metadata and affected systems
+- **Timeline of Events** — Chronological reconstruction
+- **Technical Analysis** — Attack chain breakdown
+- **MITRE ATT&CK Mapping** — Tactics and techniques
+- **IOCs** — Indicators of Compromise (IPs, hashes, file paths)
+- **Lessons Learned** — Root cause analysis
+- **Recommendations** — Remediation and prevention measures
 
 ---
 
