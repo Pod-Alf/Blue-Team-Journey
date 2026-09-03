@@ -1,64 +1,107 @@
 # Blue-Team-Journey
 Repository to document my Journey from Helpdesk support/system support to Blue Team technician/DFIR
 
-## Presentation
-Hi.
-My name is Alfonso. I've been working on IT Support and Sysadmin for over 7 years before the start of this
-pet project of mine.
+Hi, my name is **Alfonso**.
 
-In my repository you'll find my presentation and my pathway in Cybersecurity.
-Since I finished my studies I've felt that there's much more than only the positions I've worked at.
-So I finally decided to commit myself with cybersecurity for several reasons, one of which being
-the curiosity on what happened to a system after an attack has happened.
+I've been working in **IT Support and System Administration for over 7 years** before starting this project. Throughout my career, I've always felt there was much more beyond the positions I held—especially when it came to understanding **what happens to a system after an attack**.
 
-## What can you find?
+This repository documents my **transition into cybersecurity**, specifically focusing on:
+- **Blue Team operations**
+- **Digital Forensics & Incident Response (DFIR)**
+- **Security Operations Center (SOC) analysis**
 
-On this project you'll find.
+After several years on the IT ector, I decided to commit myself to cybersecurity, driven by curiosity about **incident investigation, threat detection, and response**.
 
-- 1- The start of my journey (Configuration, tools used, versions, packages, first conclussions)
-- 2- The different versions and proceedings which I've done to continue developing skills fit for SOC and DFIR.
-- 3- Reports about the attacks received on the systems of my project and the findings of such.
-- 4- Further development on said skills and project to new tools.
+---
 
-And now for the little index
+## What can you find here?
 
-- [Design Decisions](./00-design-decisions.md)
+This project is organized into four key areas:
 
-- [Report regarding nmap](./reports/01-nmap-reconnaissance.md)
+### **The Beginning**
 
-- [Report for the installation of Wazuh SIEM tool](./reports/02-wazuh-setup.md)
+My initial setup: lab configuration, tools, versions, packages, and first conclusions.
 
-- [Report about SSH bruteforce detection and custome rules on Wazuh](./reports/03-ssh-bruteforce-detection.md)
+### **Incident Reports**
 
-- [Report on Agent on Windows Endpoint with sysmon + MITTRE ATT&CK Account Discovery](./reports/04-windows-sysmon-setup.md)
+Real-world style analysis of simulated attacks, including findings, IOCs, and response actions.
 
-- [Proffessional Report on Bruteforce example](./reports/INC-001-SSH-Bruteforce.md)
+### **Tool Expansion**
 
-- [Proffessional Report on QakBot and C2 beacon](./reports/INC-002-QakBot-SOCSimulator.md)
+Continuous learning with new security tools and technologies.
 
-- [Proffessional Report on Ransomware Attack](./reports/INC-003-Ransomware_Attack.md)
-## Stack until now
+---
 
-About my job experience or on hand experience I've worked with at the moments are:
+##Repository Index
 
+### **Lab Setup & Configuration**
+
+- [Design Decisions](./00-design-decisions.md) — Architecture, tools selection, and methodology
+
+### **Technical Labs**
+
+| Lab | Topic | Tool/Technology |
+|-----|-------|-----------------|
+| [01 - Network Reconnaissance](./reports/01-nmap-reconnaissance.md) | Port scanning and service enumeration | Nmap |
+| [02 - SIEM Installation](./reports/02-wazuh-setup.md) | SIEM deployment and configuration | Wazuh |
+| [03 - SSH Attack Detection](./reports/03-ssh-bruteforce-detection.md) | Custom detection rules for brute force | Wazuh |
+| [04 - Windows Telemetry](./reports/04-windows-sysmon-setup.md) | Endpoint monitoring with MITRE ATT&CK | Sysmon |
+
+### **Professional Incident Reports**
+
+| ID | Incident Type | Report |
+|----|---------------|--------|
+| INC-001 | SSH Brute Force Attack | [View Report](./reports/INC-001-SSH-Bruteforce.md) |
+| INC-002 | QakBot Malware & C2 Beacon | [View Report](./reports/INC-002-QakBot-SOCSimulator.md) |
+| INC-003 | Ransomware Attack | [View Report](./reports/INC-003-Ransomware_Attack.md) |
+
+---
+
+## Technology Stack
+
+Based on my professional experience and hands-on practice, I've worked with:
+
+**Infrastructure & Systems:**
 - AD
 - Windows Server
 - Linux Rhel
-- M365
-- ServiceNow
-- Monitoring with Grafana
-- SCCM and Intune for device management.
+- Microsoft 365
+
+**Security & Operations:**
+- ServiceNow (Incident Management)
+- Wazuh (SIEM)
+- Sysmon (Endpoint Monitoring)
+- Grafana (Monitoring & Visualization)
+
+**Endpoint Management:**
+-Intune
+-Nexthink
+
+---
 
 ## Certifications
-
-| Certificate | Issuer | Date |
-| --- | --- | --- |
-| [Certified Cybersecurity Foundations (CORE)](https://hackviser.com/verify?id=HV-CORE-KNTWRQ8J) | Hackviser | August 2026 | 
+| Certificate | Issuer | Date | Credentials |
+| --- | --- | --- | --- |
+| [Certified Cybersecurity Foundations (CORE)](https://hackviser.com/verify?id=HV-CORE-KNTWRQ8J) | Hackviser | August 2026 | Verify Online |
 
 ## Contact Info
 
-- [Linkedin](https://www.linkedin.com/in/alfonso-podadera-lopez-0b41ab177)
+- **LinkedIn:** [Alfonso Podadera López](https://www.linkedin.com/in/alfonso-podadera-lopez-0b41ab177)
 
-- <a href="mailto:alfonsopodadera@gmail.com">Contact Mail</a>
 
-🟢 Active project — updated regularly
+- **Email:** [alfonsopodadera@gmail.com](mailto:alfonsopodadera@gmail.com)
+
+---
+
+## Project Status
+
+🟢**Active project** — Updated regularly with new labs and incident analyses.
+
+**Focus areas for 2026:**
+- Advanced SIEM analysis and detection engineering
+- Malware analysis and reverse engineering fundamentals
+- Additional certifications
+
+---
+
+*Sometimes one must know how to defend before one can understand*
