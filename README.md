@@ -32,7 +32,7 @@ Continuous learning with new security tools and technologies.
 
 ---
 
-##Repository Index
+## Repository Index
 
 ### **Lab Setup & Configuration**
 
